@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="InterfacesFuncionales">
+  <ClassDiagramComponents>
+    <Class name="TNodo" package="interfacesfuncionales" visibility="public" xPosition="27.0" yPosition="20.0">
+      <Fields>
+        <Field name="Izquierdo" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Texto"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setIzquierdo" returnType="void" visibility="public">
+          <Argument type="boolean" name="Izq"/>
+        </Method>
+        <Method name="getIzquierdo" returnType="boolean" visibility="public"/>
+        <Method name="Buscar" returnType="TNodo" visibility="protected">
+          <Argument type="boolean" name="Izq"/>
+        </Method>
+        <Method name="HijoIzquierdo" returnType="TNodo" visibility="public"/>
+        <Method name="HijoDerecho" returnType="TNodo" visibility="public"/>
+        <Method name="AgregarIzq" returnType="boolean" visibility="public">
+          <Argument type="TNodo" name="Nod"/>
+        </Method>
+        <Method name="AgregarDer" returnType="boolean" visibility="public">
+          <Argument type="TNodo" name="Nod"/>
+        </Method>
+        <Method name="getTexto" returnType="String" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TVentana" package="interfacesfuncionales" visibility="public" xPosition="338.0" yPosition="20.0">
+      <Fields>
+        <Field name="Mod" type="DefaultTreeModel" visibility="private"/>
+        <Field name="Arb" type="javax.swing.JTree" visibility="private"/>
+        <Field name="B1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="B2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="B3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="B4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="B5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnayuda" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cb1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lblSalir" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblminimizar" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tf1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txt" type="javax.swing.JTextArea" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="VerMensaje" returnType="void" visibility="private">
+          <Argument type="String" name="Texto"/>
+        </Method>
+        <Method name="getRaiz" returnType="TNodo" visibility="private"/>
+        <Method name="Seleccionado" returnType="TNodo" visibility="private"/>
+        <Method name="Actualizar" returnType="void" visibility="private"/>
+        <Method name="AgregarRaiz" returnType="boolean" visibility="private"/>
+        <Method name="Mostrar" returnType="void" visibility="private">
+          <Argument type="TNodo" name="Nod"/>
+        </Method>
+        <Method name="PreOrden" returnType="void" visibility="private">
+          <Argument type="TNodo" name="Nod"/>
+        </Method>
+        <Method name="InOrden" returnType="void" visibility="private">
+          <Argument type="TNodo" name="Nod"/>
+        </Method>
+        <Method name="PostOrden" returnType="void" visibility="private">
+          <Argument type="TNodo" name="Nod"/>
+        </Method>
+        <Method name="B1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="B2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="B3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="B4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="B5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="VerificarSeleccion" returnType="void" visibility="public"/>
+        <Method name="lblSalirMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="lblminimizarMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="btnayudaMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="Mensaje" returnType="String" visibility="private"/>
+        <Method name="tf1KeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="IFiltrar" package="interfacesfuncionales" visibility="public" xPosition="754.0" yPosition="20.0">
+      <Methods>
+        <Method name="EscogerValor" returnType="boolean" visibility="public">
+          <Argument type="int" name="valor"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Interface name="IMostrar" package="interfacesfuncionales" visibility="public" xPosition="798.0" yPosition="331.0">
+      <Methods>
+        <Method name="VerValor" returnType="void" visibility="public">
+          <Argument type="int" name="Val"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="interfacesfuncionales.TNodo" target="interfacesfuncionales.TNodo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="interfacesfuncionales.TVentana" target="interfacesfuncionales.IFiltrar" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="interfacesfuncionales.TVentana" target="interfacesfuncionales.TNodo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="interfacesfuncionales.TVentana" target="interfacesfuncionales.IMostrar" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
